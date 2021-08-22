@@ -469,11 +469,18 @@
     </tbody>
 </table>
 <script>
-  cont celulas = document.querySelectorAll("td");
-for (let = cont; cont < celulas.length-1; cont++)
+  const celulas = document.querySelectorAll("td");
+for (let cont = 0; cont < celulas.length-1; cont++)
 {
   const document = celulas[cont];
-  document.classlist.add("parede");
+  if (document.classList.contains("orcs")|| document.classList.contains("parede") || document.classList.contains("tesouro") )
+  {
+
+  }
+  else
+  {
+  document.classList.add("parede");
+  }
 }
 </script>
 </body>
