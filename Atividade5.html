@@ -470,7 +470,11 @@
 </table>
 <script>
   cont celulas = document.querySelectorAll("td");
-
+for (let = cont; cont < celulas.length-1; cont++)
+{
+  const document = celulas[cont];
+  document.classlist.add("parede");
+}
 </script>
 </body>
 </html>
